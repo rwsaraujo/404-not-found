@@ -1,0 +1,147 @@
+@forward "reset";
+@use "variables" as v;
+
+body,
+main,
+.img,
+div {
+  display: flex;
+}
+
+body,
+.img,
+div {
+  flex-direction: column;
+}
+
+body,
+main,
+div {
+  justify-content: space-between;
+}
+
+body {
+  background-color: v.$bg-color;
+  height: 100vh;
+  padding: 40px 20px 24px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+h1,
+h2,
+button,
+a {
+  font-weight: 700;
+}
+
+h1,
+p {
+  font-size: 1.5rem;
+}
+
+h1,
+button {
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  color: v.$gray-dark;
+}
+
+h1 {
+  font-family: "Inconsolata", monospace;
+  line-height: 1.5rem;
+  letter-spacing: -0.08em;
+}
+
+.img {
+  max-width: 50%;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+div {
+  align-items: flex-start;
+}
+
+h2,
+p,
+button {
+  font-family: "Space Mono", monospace;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  max-width: 586px;
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+p,
+a {
+  color: v.$gray-medium;
+}
+
+p {
+  max-width: 381px;
+  line-height: 2.25rem;
+}
+
+button,
+footer {
+  font-size: 0.875rem;
+}
+
+button {
+  width: 216px;
+  height: 68px;
+  background-color: v.$gray-dark;
+  line-height: 1.3125rem;
+  color: v.$bg-color;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-family: "Montserrat", monospace;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  color: v.$gray-light;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// breakpoints
+@media screen and (max-width: 1440px) {
+  main {
+    margin-bottom: 40px;
+    gap: 40px;
+  }
+
+  div:nth-child(2) {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
