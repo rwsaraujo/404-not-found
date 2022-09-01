@@ -10,4 +10,4 @@ This project is a challenge from <a target="_blank" href="https://devchallenges.
 
 ## Project on GitHub Pages:
 
-<a target="_blank" href="https://araujowebdev.github.io/404-Not-Found/">404 Page</a>
+<a target="_blank" href="https://araujowebdev.github.io/404-Not-Found-devChallenges/">404 Page</a>
