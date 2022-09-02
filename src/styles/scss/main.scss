@@ -1,59 +1,61 @@
 @forward "reset";
 @use "variables" as v;
 
-body,
+// general
+body {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px 24px;
+  margin: 0 auto;
+  background-color: v.$bg-color;
+}
+
+// header
+h1 {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: v.$gray-dark;
+}
+
+// main content
 main,
 .img,
 div {
   display: flex;
 }
 
-body,
 .img,
 div {
   flex-direction: column;
 }
 
-body,
 main,
 div {
   justify-content: space-between;
 }
 
-body {
-  background-color: v.$bg-color;
-  height: 100vh;
-  padding: 40px 20px 24px;
-  margin: 0 auto;
-  max-width: 1440px;
-}
-
-h1,
 h2,
-button,
-a {
+button {
   font-weight: 700;
 }
 
-h1,
 p {
   font-size: 1.5rem;
 }
 
-h1,
 button {
   text-transform: uppercase;
 }
 
-h1,
 h2 {
   color: v.$gray-dark;
-}
-
-h1 {
-  font-family: "Inconsolata", monospace;
-  line-height: 1.5rem;
-  letter-spacing: -0.08em;
 }
 
 .img {
@@ -82,8 +84,7 @@ h2 {
   line-height: 6rem;
 }
 
-p,
-a {
+p {
   color: v.$gray-medium;
 }
 
@@ -92,29 +93,32 @@ p {
   line-height: 2.25rem;
 }
 
-button,
-footer {
+button {
   font-size: 0.875rem;
 }
 
 button {
   width: 216px;
   height: 68px;
-  background-color: v.$gray-dark;
   line-height: 1.3125rem;
   color: v.$bg-color;
+  background-color: v.$gray-dark;
   cursor: pointer;
 }
 
+// footer
 footer {
-  text-align: center;
   font-family: "Montserrat", monospace;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.0625rem;
+  text-align: center;
   color: v.$gray-light;
 }
 
 a {
+  font-weight: 700;
+  color: v.$gray-medium;
   text-decoration: none;
 
   &:hover {
@@ -124,6 +128,7 @@ a {
 
 // breakpoints
 @media screen and (max-width: 1440px) {
+  // main content
   main {
     margin-bottom: 40px;
     gap: 40px;
@@ -135,6 +140,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  // main content
   main {
     flex-direction: column;
     align-items: center;
