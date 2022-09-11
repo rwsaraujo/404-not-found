@@ -1,28 +1,4 @@
-@forward "reset";
 @use "variables" as v;
-
-// general
-body {
-  max-width: 1440px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 20px 24px;
-  margin: 0 auto;
-  background-color: v.$bg-color;
-}
-
-// header
-h1 {
-  font-family: "Inconsolata", monospace;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  color: v.$gray-dark;
-}
 
 // main content
 main,
@@ -107,24 +83,6 @@ button {
 }
 
 // footer
-footer {
-  font-family: "Montserrat", monospace;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.0625rem;
-  text-align: center;
-  color: v.$gray-light;
-}
-
-a {
-  font-weight: 700;
-  color: v.$gray-medium;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 // breakpoints
 @media screen and (max-width: 1440px) {

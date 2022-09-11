@@ -1,0 +1,20 @@
+@use "variables" as v;
+
+footer {
+  font-family: "Montserrat", monospace;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  text-align: center;
+  color: v.$gray-light;
+}
+
+a {
+  font-weight: 700;
+  color: v.$gray-medium;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
