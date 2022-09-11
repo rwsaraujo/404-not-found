@@ -1,11 +1,21 @@
 @use "variables" as v;
 
-h1 {
-  font-family: "Inconsolata", monospace;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  color: v.$gray-dark;
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-family: "Inconsolata", monospace;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: v.$gray-dark;
+  }
+}
+
+@media screen and (max-width: 599.98px) {
+  header {
+    height: 64px;
+  }
 }
