@@ -1,111 +1,71 @@
 @use "variables" as v;
 
-// main content
-main,
-.img,
-div {
+main {
+  height: 640px;
   display: flex;
-}
+  align-items: center;
+  gap: 20px;
 
-.img,
-div {
-  flex-direction: column;
-}
+  div:first-child {
+    width: 50%;
 
-main,
-div {
-  justify-content: space-between;
-}
+    img {
+      width: 100%;
+    }
+  }
 
-h2,
-button {
-  font-weight: 700;
-}
-
-p {
-  font-size: 1.5rem;
-}
-
-button {
-  text-transform: uppercase;
-}
-
-h2 {
-  color: v.$gray-dark;
-}
-
-.img {
-  max-width: 50%;
-  justify-content: center;
-}
-
-img {
-  max-width: 100%;
-}
-
-div {
-  align-items: flex-start;
-}
-
-h2,
-p,
-button {
-  font-family: "Space Mono", monospace;
-  letter-spacing: -0.035em;
-}
-
-h2 {
-  max-width: 586px;
-  font-size: 4rem;
-  line-height: 6rem;
-}
-
-p {
-  color: v.$gray-medium;
-}
-
-p {
-  max-width: 381px;
-  line-height: 2.25rem;
-}
-
-button {
-  font-size: 0.875rem;
-}
-
-button {
-  width: 216px;
-  height: 68px;
-  line-height: 1.3125rem;
-  color: v.$bg-color;
-  background-color: v.$gray-dark;
-  cursor: pointer;
-}
-
-// footer
-
-// breakpoints
-@media screen and (max-width: 1440px) {
-  // main content
-  main {
-    margin-bottom: 40px;
+  div:last-child {
+    max-width: 50%;
+    display: grid;
     gap: 40px;
-  }
+    justify-items: left;
 
-  div:nth-child(2) {
-    gap: 30px;
+    h2,
+    p {
+      font-family: "Space Mono", monospace;
+    }
+
+    h2 {
+      max-width: 540px;
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 4.5rem;
+      color: v.$gray-dark;
+    }
+
+    p {
+      max-width: 460px;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      color: v.$gray-medium;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
-  // main content
+@media screen and (max-width: 599.98px) {
   main {
+    height: auto;
     flex-direction: column;
-    align-items: center;
-  }
+    gap: 40px;
+    align-items: unset;
+    margin: 64px 0;
 
-  h2 {
-    font-size: 3rem;
-    line-height: 4rem;
+    div:first-child {
+      width: 100%;
+    }
+
+    div:last-child {
+      max-width: 100%;
+
+      h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
   }
 }
