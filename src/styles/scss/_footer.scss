@@ -1,20 +1,25 @@
 @use "variables" as v;
 
 footer {
-  font-family: "Montserrat", monospace;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.0625rem;
-  text-align: center;
-  color: v.$gray-light;
-}
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-a {
-  font-weight: 700;
-  color: v.$gray-medium;
-  text-decoration: none;
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: v.$gray-light;
 
-  &:hover {
-    text-decoration: underline;
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: v.$gray-dark;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
