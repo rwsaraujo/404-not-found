@@ -1,19 +1,19 @@
-@use "variables" as v;
+@use "colors" as c;
 
 body {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: v.$white;
+  background-color: c.$white;
   padding: 0 10px;
 }
 
 .btn {
-  background-color: v.$gray-dark;
+  background-color: c.$gray-dark;
   padding: 20px 40px;
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  color: v.$white;
+  color: c.$white;
   cursor: pointer;
 }

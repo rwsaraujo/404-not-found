@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "colors" as c;
 
 main {
   height: 640px;
@@ -30,14 +30,14 @@ main {
       font-weight: 700;
       font-size: 4rem;
       line-height: 4.5rem;
-      color: v.$gray-dark;
+      color: c.$gray-dark;
     }
 
     p {
       max-width: 460px;
       font-size: 1.5rem;
       line-height: 2.25rem;
-      color: v.$gray-medium;
+      color: c.$gray-medium;
     }
   }
 }

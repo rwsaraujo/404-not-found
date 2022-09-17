@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "colors" as c;
 
 header {
   height: 100px;
@@ -10,7 +10,7 @@ header {
     font-weight: 700;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: v.$gray-dark;
+    color: c.$gray-dark;
   }
 }
 
