@@ -6,11 +6,9 @@ header {
   align-items: center;
 
   h1 {
-    font-family: "Inconsolata", monospace;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font: 700 1.5rem "Inconsolata", monospace;
     text-transform: uppercase;
-    color: c.$gray-dark;
+    color: c.$dark-gray;
   }
 }
 

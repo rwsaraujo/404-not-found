@@ -7,15 +7,13 @@ footer {
   align-items: center;
 
   span {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    color: c.$gray-light;
+    font: 500 0.75rem/1rem "Montserrat", sans-serif;
+    color: c.$light-gray;
 
     a {
       font-weight: 700;
       text-decoration: none;
-      color: c.$gray-dark;
+      color: c.$dark-gray;
 
       &:hover {
         text-decoration: underline;

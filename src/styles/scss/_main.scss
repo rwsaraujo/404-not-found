@@ -20,24 +20,16 @@ main {
     gap: 40px;
     justify-items: left;
 
-    h2,
-    p {
-      font-family: "Space Mono", monospace;
-    }
-
     h2 {
       max-width: 540px;
-      font-weight: 700;
-      font-size: 4rem;
-      line-height: 4.5rem;
-      color: c.$gray-dark;
+      font: 700 4rem/4.5rem "Space Mono", monospace;
+      color: c.$dark-gray;
     }
 
     p {
       max-width: 460px;
-      font-size: 1.5rem;
-      line-height: 2.25rem;
-      color: c.$gray-medium;
+      font: 1.5rem/2.25rem "Space Mono", monospace;
+      color: c.$medium-gray;
     }
   }
 }
@@ -58,13 +50,11 @@ main {
       max-width: 100%;
 
       h2 {
-        font-size: 3rem;
-        line-height: 3.5rem;
+        font: 700 3rem/3.5rem "Space Mono", monospace;
       }
 
       p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font: 1rem/1.5rem "Space Mono", monospace;
       }
     }
   }

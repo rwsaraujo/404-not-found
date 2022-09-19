@@ -8,11 +8,9 @@ body {
 }
 
 .btn {
-  background-color: c.$gray-dark;
+  background-color: c.$dark-gray;
   padding: 20px 40px;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-size: 12px;
+  font: 700 0.75rem/1rem "Space Mono", monospace;
   text-transform: uppercase;
   color: c.$white;
   cursor: pointer;
