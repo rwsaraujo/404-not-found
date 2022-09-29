@@ -61,7 +61,7 @@ git clone https://github.com/araujowebdev/404-Not-Found---devChallenges.git
  --------------------------------------
 [Browsersync] Serving files from: ./
 [Browsersync] 1 file changed (style.css)
-[08:52:06] Finished 'compileSass' after 74 ms
+[00:00:00] Finished 'compileSass' after 74 ms
 ```
 
 <a href='#top'>🔼 Voltar ao topo</a>
