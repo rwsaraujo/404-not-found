@@ -1,7 +1,7 @@
 @use "colors" as c;
 
 main {
-  height: 640px;
+  height: calc(100vh - 16.8vh);
   display: flex;
   align-items: center;
   gap: 20px;
