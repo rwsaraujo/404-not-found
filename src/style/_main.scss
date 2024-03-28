@@ -1,4 +1,4 @@
-@use "colors" as c;
+@use "colors";
 
 main {
   height: calc(100vh - 16.8vh);
@@ -23,13 +23,13 @@ main {
     h2 {
       max-width: 540px;
       font: 700 4rem/4.5rem "Space Mono", monospace;
-      color: c.$dark-gray;
+      color: colors.$dark-gray;
     }
 
     p {
       max-width: 460px;
       font: 1.5rem/2.25rem "Space Mono", monospace;
-      color: c.$medium-gray;
+      color: colors.$medium-gray;
     }
   }
 }
