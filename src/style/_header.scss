@@ -1,4 +1,4 @@
-@use "colors" as c;
+@use "colors";
 
 header {
   height: 100px;
@@ -8,7 +8,7 @@ header {
   h1 {
     font: 700 1.5rem "Inconsolata", monospace;
     text-transform: uppercase;
-    color: c.$dark-gray;
+    color: colors.$dark-gray;
   }
 }
 

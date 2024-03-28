@@ -1,17 +1,17 @@
-@use "colors" as c;
+@use "colors";
 
 body {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: c.$white;
+  background-color: colors.$white;
   padding: 0 10px;
 }
 
 .btn {
-  background-color: c.$dark-gray;
+  background-color: colors.$dark-gray;
   padding: 20px 40px;
   font: 700 0.75rem/1rem "Space Mono", monospace;
   text-transform: uppercase;
-  color: c.$white;
+  color: colors.$white;
   cursor: pointer;
 }

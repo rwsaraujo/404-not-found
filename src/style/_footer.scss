@@ -1,4 +1,4 @@
-@use "colors" as c;
+@use "colors";
 
 footer {
   height: 64px;
@@ -8,12 +8,12 @@ footer {
 
   span {
     font: 500 0.75rem/1rem "Montserrat", sans-serif;
-    color: c.$light-gray;
+    color: colors.$light-gray;
 
     a {
       font-weight: 700;
       text-decoration: none;
-      color: c.$dark-gray;
+      color: colors.$dark-gray;
 
       &:hover {
         text-decoration: underline;
