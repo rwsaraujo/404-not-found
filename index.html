@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<head>
+  <!-- Meta tags -->
+  <title>404 Not Found</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts | Inconsolata, Montserrat & Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./build/style/style.css" />
+</head>
 
-    <!-- Style -->
-    <link rel="stylesheet" href="./build/style/style.css" />
+<body class="bg-white txt-darkgray spacemono-700 flex column spacebetween gap-2">
+  <!-- Header -->
+  <header class="header container flex center-v">
+    <h1 class="inconsolata-700 uppercase">404 not found</h1>
+  </header>
 
-    <title>404 Not Found</title>
-  </head>
+  <!-- Main -->
+  <main class="main container flex gap-1">
+    <div class="main__image flex center">
+      <img src="./src/img/strawman.png" alt="Straw Man" />
+    </div>
 
-  <body>
-    <header>
-      <h1>404 not found</h1>
-    </header>
+    <div class="main__text flex column center-h gap-1">
+      <h2 class="spacemono-700">I have bad news for you</h2>
+      <p class="txt-mediumgray">The page you are looking for might be removed or is temporarily unavailable</p>
+      <a href="" class="btn">Back to homepage</a>
+    </div>
+  </main>
 
-    <main>
-      <div>
-        <img src="./src/img/strawman.png" alt="Straw Man" />
-      </div>
+  <!-- Footer -->
+  <footer class="footer container flex center montserrat-500 txt-lightgray">
+    <p>2024 - created by
+      <a href="https://rwsaraujo.github.io/showcase/" target="_blank" class="link txt-lightgray">rwsaraujo</a> |
+      <a href="https://devchallenges.io/" target="_blank" class="link txt-lightgray">devChallenges.io</a>
+    </p>
+  </footer>
+</body>
 
-      <div>
-        <h2>I have bad news for you</h2>
-
-        <p>
-          The page you are looking for might be removed or is temporarily
-          unavailable
-        </p>
-
-        <button class="btn">Back to homepage</button>
-      </div>
-    </main>
-
-    <footer>
-      <p>created by <a href="https://rwsaraujo.github.io/showcase/" target="_blank">rwsaraujo</a> - devChallenges.io</p>
-    </footer>
-  </body>
 </html>

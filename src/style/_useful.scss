@@ -1,0 +1,52 @@
+@use "colors";
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+
+  &-v {
+    justify-content: initial;
+    align-items: center;
+  }
+
+  &-h {
+    justify-content: center;
+    align-items: initial;
+  }
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 1rem; /* 16px */
+}
+.gap-2 {
+  gap: 2rem; /* 32px */
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: colors.$darkgray;
+  color: colors.$white;
+  width: fit-content;
+  padding: 1.5rem 3rem; /* 24px 48px */
+  font-size: 0.75rem; /* 12px */
+  border: 1px solid colors.$darkgray;
+  transition: 0.2s;
+
+  &:hover {
+    color: colors.$darkgray;
+    background: colors.$white;
+  }
+}

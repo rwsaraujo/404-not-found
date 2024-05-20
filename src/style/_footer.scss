@@ -1,23 +1,13 @@
-@use "colors";
+.footer {
+  height: 3.75rem; /* 60px */
+  width: 100%;
+}
 
-footer {
-  height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    font: 500 0.75rem/1rem "Montserrat", sans-serif;
-    color: colors.$light-gray;
-
+@media screen and (max-width: 420px) {
+  .footer {
+    p,
     a {
-      font-weight: 700;
-      text-decoration: none;
-      color: colors.$dark-gray;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      font-size: 0.75rem; /* 12px */
     }
   }
 }

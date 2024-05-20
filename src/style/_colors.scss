@@ -1,4 +1,33 @@
-$dark-gray: #333333;
-$medium-gray: #4f4f4f;
-$light-gray: #bdbdbd;
+$darkgray: #333333;
+$mediumgray: #4f4f4f;
+$lightgray: #bdbdbd;
 $white: #fafafa;
+
+// Text Colors
+.txt {
+  &-darkgray {
+    color: $darkgray;
+  }
+  &-mediumgray {
+    color: $mediumgray;
+  }
+  &-lightgray {
+    color: $lightgray;
+  }
+}
+
+// Background Colors
+.bg {
+  &-white {
+    background-color: $white;
+  }
+}
+
+// Link Colors
+.link {
+  transition: 0.2s;
+
+  &:hover {
+    color: $darkgray;
+  }
+}

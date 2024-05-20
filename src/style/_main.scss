@@ -1,60 +1,51 @@
-@use "colors";
+.main {
+  max-height: calc(
+    100vh - 11.5rem
+  ); /* 100vh - 184px -> header (60px) + gap (32px) + gap (32px) + footer (60px) */
 
-main {
-  height: calc(100vh - 16.8vh);
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  div:first-child {
-    width: 50%;
+  &__image {
+    width: 100%;
+    max-width: 38.5rem; /* 616px */
 
     img {
-      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 
-  div:last-child {
-    max-width: 50%;
-    display: grid;
-    gap: 40px;
-    justify-items: left;
+  &__text {
+    width: 100%;
+    max-width: 38.5rem; /* 616px */
 
     h2 {
-      max-width: 540px;
-      font: 700 4rem/4.5rem "Space Mono", monospace;
-      color: colors.$dark-gray;
+      font-size: 4rem; /* 64px */
     }
 
     p {
-      max-width: 460px;
-      font: 1.5rem/2.25rem "Space Mono", monospace;
-      color: colors.$medium-gray;
+      font-size: 1.5rem; /* 24px */
+      line-height: 1.25;
     }
   }
 }
 
-@media screen and (max-width: 599.98px) {
-  main {
-    height: auto;
+@media screen and (max-width: 700px) {
+  .main {
+    max-height: initial;
     flex-direction: column;
-    gap: 40px;
-    align-items: unset;
-    margin: 64px 0;
+    justify-content: center;
+    text-align: center;
 
-    div:first-child {
-      width: 100%;
-    }
-
-    div:last-child {
-      max-width: 100%;
-
+    &__text {
       h2 {
-        font: 700 3rem/3.5rem "Space Mono", monospace;
+        font-size: 3rem; /* 48px */
       }
 
       p {
-        font: 1rem/1.5rem "Space Mono", monospace;
+        font-size: 1rem; /* 16px */
+      }
+
+      a.btn {
+        margin: 0 auto;
       }
     }
   }

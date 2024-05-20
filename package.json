@@ -1,14 +1,16 @@
 {
   "name": "404-not-found",
-  "version": "2.0.0",
-  "description": "The '404 Not Found' is a page that informs the user of the 404 ERROR (response to the request not found on the server). There is a message giving details of what happened to the user and a button to return them to the home page (not functional for the purpose of this project).",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "sass": "^1.69.5"
-  },
   "scripts": {
-    "sass": "sass --watch src/style/style.scss build/style/style.css --style compressed"
+    "sass": "sass --watch src/style/style.scss build/style/style.css --style compressed",
+    "uglifyjs": "uglifyjs src/js/script.js -c -o build/js/script.js"
   },
-  "author": "Raphael Araujo",
-  "license": "ISC"
+  "author": "rwsaraujo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.2",
+    "uglify-js": "^3.17.4"
+  }
 }
