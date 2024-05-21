@@ -27,9 +27,8 @@ This project was developed as a challenge proposed by the devChallenges website 
 
 ### Built with
 
-- HTML5
-- CSS3
-- CSS3 Flex Box
+- HTML
+- CSS Flex Box
 - JavaScript
 
 ## Author
