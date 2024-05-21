@@ -1,4 +1,4 @@
 // Footer
 document.querySelector(
-  ".current_year"
+  ".current-year"
 ).innerHTML = `${new Date().getFullYear()} - `;
